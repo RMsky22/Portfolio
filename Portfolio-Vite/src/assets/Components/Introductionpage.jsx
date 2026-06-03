@@ -6,8 +6,8 @@ import ToDoList from "./Todolist";
 import { useState } from "react";
 const IntroductionPage = () => {
   const skills = [
-    { title: "React", description: "Hooks, Context, Router" },
-    { title: "JavaScript", description: "ES6+, Async, DOM" },
+    { title: "React", description: "Hooks, Context," },
+    { title: "JavaScript", description: "ES6+, DOM" },
     { title: "CSS", description: "Flexbox, Grid, Animations" },
     { title: "UI/UX", description: "Component libraries, Design systems" },
   ];
