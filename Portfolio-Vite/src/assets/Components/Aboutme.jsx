@@ -14,7 +14,7 @@ function AboutMe() {
         <div className="contact">
           <h3>Contact</h3>
           <p>Rijaalmahoney2@gmail.com</p>
-          <p>github.com/yourusername</p>
+          <p>github.com/RMsky22</p>
           <p>linkedin.com/in/rijaal-m-0735b7266</p>
         </div>
       </div>
