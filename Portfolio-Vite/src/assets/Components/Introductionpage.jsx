@@ -3,7 +3,7 @@ import Hero from "./Hero";
 import Card from "./Card";
 import ResponsiveGrid from "./ResponsiveGrid";
 import ToDoList from "./Todolist";
-
+import { useState } from "react";
 const IntroductionPage = () => {
   const skills = [
     { title: "React", description: "Hooks, Context, Router" },
@@ -27,6 +27,7 @@ const IntroductionPage = () => {
       projectsSection.scrollIntoView({ behavior: "smooth" });
     }
   };
+    const [isTodoOpen, setIsTodoOpen] = useState(false);
   return (
     <div className="introduction-page">
       <Hero />
@@ -69,10 +70,17 @@ const IntroductionPage = () => {
           </div>
         </div>
       </section>
-      <section className="todo-demo-section">
+            <section className="todo-demo-section">
         <div className="container">
-          <h2 className="section-title">Live Demo: Todo List</h2>
-          <ToDoList />
+          <div className="collapsible-header" onClick={() => setIsTodoOpen(!isTodoOpen)}>
+            <h2 className="section-title">Live Demo: Todo List</h2>
+            <span className="toggle-icon">{isTodoOpen ? '▲' : '▼'}</span>
+          </div>
+          {isTodoOpen && (
+            <div className="collapsible-content">
+              <ToDoList />
+            </div>
+          )}
         </div>
       </section>
     </div>

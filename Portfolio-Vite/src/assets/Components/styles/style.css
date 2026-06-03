@@ -1150,6 +1150,34 @@ h2, h3 {font-weight: normal;}
   margin: 0 auto;
 }
 
+.collapsible-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+}
+
+.collapsible-header:hover {
+  background: var(--bg-tertiary);
+}
+
+.collapsible-header .section-title {
+  margin-bottom: 0;
+}
+
+.toggle-icon {
+  font-size: 1.5rem;
+  color: var(--accent-start);
+}
+
+.collapsible-content {
+  margin-top: 1rem;
+  animation: fadeIn var(--transition-base);}
+
 /* ======================================== */
 /* RESPONSIVE BREAKPOINTS
 /* ======================================== */

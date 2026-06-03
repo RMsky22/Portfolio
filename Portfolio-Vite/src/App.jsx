@@ -13,8 +13,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <IntroductionPage />
       <AboutMe/>
+      <IntroductionPage />
       <Footer />
     
     </>
