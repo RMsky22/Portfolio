@@ -1,0 +1,14 @@
+/* ResponsiveGrid.css */
+.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+  grid-auto-rows: auto; /* auto rows based on content */
+  gap: 1rem;
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+  .responsive-grid {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+}
